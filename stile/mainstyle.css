@@ -9,8 +9,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.sezionesocialfooter {
+  border-bottom: 1px solid rgb(50, 50, 237);
+  border-top: 1px solid rgb(50, 50, 237);
+}
+
 .fontpiccolo {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 .fonttitoli {
@@ -69,4 +74,22 @@ nav a:hover {
 }
 .contenitoretitoloimg h1, .contenitoretitoloimg span {
   text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+.colonnaprimafotohome {
+  background-image: url("img/slideshow-1565694222.jpg");
+  background-position: cover bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.colonnasecondafotohome {
+  background-image: url("img/ristoranti-di-mare-Lazio.jpg");
+  background-position: cover bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenitorerecensioni h3 {
+  border-bottom: 1px solid rgb(50, 50, 237);
 }/*# sourceMappingURL=mainstyle.css.map */

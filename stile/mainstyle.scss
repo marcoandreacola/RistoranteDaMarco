@@ -82,5 +82,21 @@
                1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
 }
 }
-
+.colonnaprimafotohome{
+    background-image: url('img/slideshow-1565694222.jpg');
+    background-position: cover bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.colonnasecondafotohome{
+    background-image: url('img/ristoranti-di-mare-Lazio.jpg');
+    background-position: cover bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contenitorerecensioni{
+    h3{
+        border-bottom: 1px solid $primarycolor;
+    }
+}
 
