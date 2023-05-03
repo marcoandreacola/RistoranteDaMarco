@@ -1,0 +1,11 @@
+nav{
+    background-color: $primarycolor;
+    border-bottom: 1px solid $secondarycolor;
+    a{
+        color: $secondarycolor !important;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+};
+

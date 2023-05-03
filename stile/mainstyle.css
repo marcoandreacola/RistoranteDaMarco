@@ -1,0 +1,72 @@
+nav {
+  background-color: rgb(50, 50, 237);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+nav a {
+  color: rgb(255, 255, 255) !important;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.fontpiccolo {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.fonttitoli {
+  font-family: "Merriweather", serif;
+}
+
+.contenitoreimgmarehome {
+  background-image: url("img/ristoranti-sul-mare.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+@media screen and (max-width: 992px) {
+  .contenitoreimgmarehome {
+    height: 65vh;
+  }
+}
+@media screen and (max-width: 452px) {
+  .contenitoreimgmarehome {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 2500px) {
+  .contenitoretitoloimg {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 992px) {
+  .contenitoretitoloimg {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 552px) {
+  .contenitoretitoloimg {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 452px) {
+  .contenitoretitoloimg {
+    position: absolute;
+    left: 50%;
+    bottom: 58%;
+    transform: translate(-50%, -50%);
+  }
+}
+.contenitoretitoloimg h1, .contenitoretitoloimg span {
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}/*# sourceMappingURL=mainstyle.css.map */

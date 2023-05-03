@@ -1,0 +1,86 @@
+@import 'responsive';
+@import 'variable';
+@import 'header';
+@import 'footer';
+
+
+// @mixin TipografiaResponsive(){
+//     font-size: calc(0.6em + 2.5vw);
+// }
+.fontpiccolo{
+    font-family: $fontpiccolo;
+}
+.fonttitoli{
+    font-family: $fonttitoli;
+}
+.contenitoreimgmarehome{
+    background-image: url('img/ristoranti-sul-mare.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;    
+}
+@media screen and (max-width: 992px) {
+    .contenitoreimgmarehome {
+      height: 65vh;
+    }
+}
+@media screen and (max-width: 452px) {
+    .contenitoreimgmarehome {
+      height: 35vh;
+    }
+}
+// funzioni responsive testo img
+@mixin Posizionetitoloimg1200px(){
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+}
+@mixin Posizionetitoloimg1092px(){
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+}
+@mixin Posizionetitoloimg802px(){
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+}
+@mixin Posizionetitoloimg452px(){
+    position: absolute;
+    left: 50%;
+    bottom: 58%;
+    transform: translate(-50%, -50%);
+}
+// media query posizione testo su img
+@media screen and (max-width: 2500px) {
+    .contenitoretitoloimg{
+      @include Posizionetitoloimg1200px();
+    }
+}
+@media screen and (max-width: 992px) {
+    .contenitoretitoloimg{
+      @include Posizionetitoloimg1092px();
+    }
+}
+@media screen and (max-width: 552px) {
+    .contenitoretitoloimg{
+      @include Posizionetitoloimg802px();
+    }
+  }
+  @media screen and (max-width: 452px) {
+    .contenitoretitoloimg{
+      @include Posizionetitoloimg452px();
+    }
+  }
+.contenitoretitoloimg{
+    h1, span{
+        text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+}
+
+

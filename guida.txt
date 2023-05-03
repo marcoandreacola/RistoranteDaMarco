@@ -1,0 +1,88 @@
+Per usare SASS abbiamo bisogno di un'estensione che ci converte il codice da sass in css, perchè il browser non
+è in grado di leggerlo
+
+VARIABILI IN SASS:
+
+$pink : pink;
+.classe{
+    color: $pink;
+}
+
+ANNIDARE I SELETTORI:
+in sass possiamo scrivere: 
+
+$red: red;
+$white: white;
+
+.contenitore{
+    background-color: $red;
+    .titolo{
+        color:$white;
+    }
+}
+
+.contenitore2{
+    background-color: $white;
+    .titolo{
+        color:$red;
+    }
+}
+
+IMPORTARE CON SASS: 
+per importare una "partial", bisogna scrivere questo codice all'interno del file main:
+
+@import 'nome partial senza underscore';
+
+i nomi dei file partial vanno scritti con _ davanti e con estensione .scss, le partial vanno importate in ordine 
+il file css legge dall'alto verso il basso, quindi se mettiamo il footer prima dell'header avremo prima il footer 
+e poi l'header 
+
+FUNCTION SASS:
+Le funzioni in SASS si chiamano mixin e si scrivono cosi:
+
+@mixin nomeFunzione(){
+
+}
+
+RICHIAMARE FUNZIONE SASS:
+
+selettoreCSS{
+    @include nomeFunzione();
+}
+
+ESEMPIO FUNZIONE SASS PER ALTEZZA RESPONSIVE:
+@mixin responsiveHeight ($x, $y){
+    height:0;         //impostiamo l'altezza tramite il padding per essere responsive
+    padding-bottom: ($x/$y)*100%;
+}
+
+richiamo:
+
+selettoreCSS:{
+    @include responsiveHeight(16/9)
+}
+
+EXTEND:
+Possiamo estendere delle proprietà di un selettore ad altri, esempio:
+
+.divicona{
+    background-color: black;
+    widht:50px;
+}
+.div1{
+    @extend .divicona  //cosi facendo diamo le stesse proprietà contenute in '.divicona' anche a '.div1'
+}
+.div2{
+    @extend .divicona  //cosi facendo diamo le stesse proprietà contenute in '.divicona' anche a '.div1'
+}
+
+OPERAZIONI IN SASS:
+possiamo effetuare delle operazioni in SASS proprio come in un lionguaggio di programmazione:
+
+$primarybackground: red;
+$heightdiv: 20px;
+
+.classe{
+    background-color: $primarybackground * 1.5;
+    height: $heightdi + 10;
+}
