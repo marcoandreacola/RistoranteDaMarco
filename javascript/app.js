@@ -46,7 +46,6 @@ phoneInput.addEventListener('input', function() {
     phoneInput.value = ''; // cancelliamo l'input errato
   }
 });
-
 // controllo nome e cognome input
 const input = document.getElementById("username");
 input.addEventListener("input", function() {
@@ -57,7 +56,6 @@ input.addEventListener("input", function() {
     input.value = "";
   }
 });
-
 // Aggiungiamo un listener al submit del form
 document.querySelector('form').addEventListener('submit', function(event) {
     // Verifichiamo se i campi sono stati compilati

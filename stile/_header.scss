@@ -1,11 +1,17 @@
 nav{
-    background-color: $primarycolor;
-    border-bottom: 1px solid $secondarycolor;
-    a{
-        color: $secondarycolor !important;
-    }
+    background-color: $secondarycolor;
+    border-bottom: 1px solid lightgrey;
+    a,.nav-item{
+        font-weight: bold;
+        color: black !important;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom-color 0.2s ease-in-out;
+    };
+    // .nav-item:hover{
+    //     border-bottom-color: $primarycolor;
+    // }
     a:hover{
-        text-decoration: underline;
-    }
+        color: $primarycolor !important; 
+    };
 };
 
