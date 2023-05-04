@@ -31,6 +31,9 @@ inputDate.addEventListener('click', function() {
 
 // controllo numero telefonico input
 const phoneInput = document.getElementById('cellnumber');
+let alertcompilatutticampi = document.querySelector('.alertcompilatutticampi');
+let alertnomecognome = document.querySelector('.alertnomecognome');
+let alerttelefono = document.querySelector('.alerttelefono');
 
 phoneInput.addEventListener('input', function() {
   const phoneRegex = /^\d+$/; // espressione regolare per controllare che l'input sia composto solo da numeri
@@ -39,7 +42,7 @@ phoneInput.addEventListener('input', function() {
   if (phoneRegex.test(phoneNumber)) { // se l'input contiene solo numeri
     // qui puoi inserire eventuali altre azioni da eseguire se l'input è valido
   } else { // se l'input contiene anche del testo
-    alert('Il numero di telefono deve contenere solo numeri. Per favore correggere.');
+    alerttelefono.classList.remove("d-none");
     phoneInput.value = ''; // cancelliamo l'input errato
   }
 });
@@ -50,7 +53,7 @@ input.addEventListener("input", function() {
   const regex = /^[a-zA-Z\s]*$/;
   const value = input.value.trim();
   if (!regex.test(value)) {
-    alert("Il nome e cognome non può contenere numeri o caratteri speciali.");
+    alertnomecognome.classList.remove("d-none");
     input.value = "";
   }
 });
@@ -61,6 +64,6 @@ document.querySelector('form').addEventListener('submit', function(event) {
     if (!input.value || !phoneInput.value) {
       // Se uno o entrambi i campi non sono stati compilati, impediamo l'invio del modulo
       event.preventDefault();
-      alert('Inserire nome,cognome e numero di telefono prima di inviare la prenotazione');
+      alertcompilatutticampi.classList.remove("d-none");
     }
   });

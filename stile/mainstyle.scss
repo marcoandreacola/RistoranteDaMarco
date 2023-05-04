@@ -96,13 +96,16 @@
 }
 .contenitorerecensioni{
     h3{
-        background-color: aqua;
-        width: 100%;
         border-bottom: 1px solid $primarycolor;
     }
     border: 1px solid $primarycolor;
     box-shadow: rgba(109, 109, 109, 0.35) 0px 7px 18px;
 }
+@media screen and (max-width: 575px) {
+    .contenitorerecensioni{
+      width: 85%;
+    }
+  }
 .contenitoreformprenotazioni{
     .col-10{
         border: 1px solid $primarycolor;

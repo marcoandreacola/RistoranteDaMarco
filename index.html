@@ -86,18 +86,18 @@
       </div>
 
       <!-- sezione recensioni -->
-      <div class="container mt-5 contenitorerecensioni text-center py-4 fontpiccolo px-0 w-75">
+      <div class="container mt-5 contenitorerecensioni text-center py-4 fontpiccolo">
         <div class="row">
           <h3 class="pb-3 text-center fonttitoli">Le Nostre Recensioni:</h3>
-          <div class="col-10 col-md-4 pt-4 mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda fugiat exercitationem modi. Fugit eveniet possimus eius laudantium, cumque praesentium consequuntur voluptatum quas, facilis aut animi quod fugiat, incidunt tempore distinctio.
-          </div>
-          <div class="col-10 col-md-4 pt-4 mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda fugiat exercitationem modi. Fugit eveniet possimus eius laudantium, cumque praesentium consequuntur voluptatum quas, facilis aut animi quod fugiat, incidunt tempore distinctio.
-          </div>
-          <div class="col-10 col-md-4 pt-4 mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda fugiat exercitationem modi. Fugit eveniet possimus eius laudantium, cumque praesentium consequuntur voluptatum quas, facilis aut animi quod fugiat, incidunt tempore distinctio.
-          </div>
+              <div class="col-10 col-md-4 pt-4 mx-auto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda fugiat exercitationem modi. Fugit eveniet possimus eius laudantium, cumque praesentium consequuntur voluptatum quas, facilis aut animi quod fugiat, incidunt tempore distinctio.
+              </div>
+              <div class="col-10 col-md-4 pt-4 mx-auto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda fugiat exercitationem modi. Fugit eveniet possimus eius laudantium, cumque praesentium consequuntur voluptatum quas, facilis aut animi quod fugiat, incidunt tempore distinctio.
+              </div>
+              <div class="col-10 col-md-4 pt-4 mx-auto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda fugiat exercitationem modi. Fugit eveniet possimus eius laudantium, cumque praesentium consequuntur voluptatum quas, facilis aut animi quod fugiat, incidunt tempore distinctio.
+              </div>
         </div>
       </div>
 
@@ -149,6 +149,10 @@
               <input type="text" id="username" name="username" class="d-block mx-auto w-50 inputprenotazioni text-center">
               <label for="username" class="d-block mx-auto my-2">Numero Telefonico:</label>
               <input type="text" id="cellnumber" name="username" class="d-block mx-auto w-50 inputprenotazioni text-center">
+              <!-- alert in caso l'utente commette errori nella prenotazioni -->
+              <div class="text-danger border border-danger mt-3 text-center w-100 d-none alertcompilatutticampi">Inserire nome,cognome e numero di telefono prima di inviare la prenotazione</div>
+              <div class="text-danger border border-danger mt-3 text-center w-100 d-none alertnomecognome">Il nome e cognome non può contenere numeri o caratteri speciali.</div>
+              <div class="text-danger border border-danger mt-3 text-center w-100 d-none alerttelefono">Il numero di telefono deve contenere solo numeri.</div>
               <button type="submit" class="btn mt-4 mb-3 my-1">Invia Prenotazione</button>
             </form>
           </div>
