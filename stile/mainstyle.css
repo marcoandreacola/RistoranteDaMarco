@@ -90,6 +90,16 @@ nav a:hover {
   background-repeat: no-repeat;
 }
 
+.contenitorerecensioni {
+  border: 1px solid rgb(50, 50, 237);
+  box-shadow: rgba(109, 109, 109, 0.35) 0px 7px 18px;
+}
 .contenitorerecensioni h3 {
   border-bottom: 1px solid rgb(50, 50, 237);
+}
+
+.contenitoreformprenotazioni .inputprenotazioni {
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  border: 1px solid lightgrey;
 }/*# sourceMappingURL=mainstyle.css.map */

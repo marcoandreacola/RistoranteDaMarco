@@ -52,7 +52,7 @@
       </div>
 
       <!-- prima griglia testo e foto -->
-      <div class="container text-center mt-4">
+      <div class="container text-center mt-5">
         <div class="row">
           <div class="col-10 col-md-6 mx-auto">
             <h4 class="text-black fonttitoli">Ristorante Da Marco: Chi Siamo</h4>
@@ -86,9 +86,9 @@
       </div>
 
       <!-- sezione recensioni -->
-      <div class="container mt-5 contenitorerecensioni text-center">
+      <div class="container mt-5 contenitorerecensioni text-center py-4 fontpiccolo w-75">
         <div class="row">
-          <h3 class="pb-3 text-center">Le Nostre Recensioni:</h3>
+          <h3 class="pb-3 text-center fonttitoli">Le Nostre Recensioni:</h3>
           <div class="col-10 col-md-4 mx-auto pt-4">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda fugiat exercitationem modi. Fugit eveniet possimus eius laudantium, cumque praesentium consequuntur voluptatum quas, facilis aut animi quod fugiat, incidunt tempore distinctio.
           </div>
@@ -101,15 +101,15 @@
         </div>
       </div>
 
-      <div class="container text-center mt-5 fontpiccolo">
+      <div class="container text-center mt-5 fontpiccolo contenitoreformprenotazioni">
         <div class="row">
           <div class="col-10 col-md-6 bg-info mx-auto">
             <h4 class="text-black fonttitoli my-auto mt-3 mb-3">Prenota</h4>
             <form action="">
               <label for="username" class="my-1">Data:</label>
-              <input type="date" id="username" name="username" class="rounded-0 d-block mx-auto my-1 w-50 py-1" required>
+              <input type="date" id="username" name="username" class="text-center d-block mx-auto w-50 inputprenotazioni" required>
               <label for="email" class="d-block my-1">Orario:</label>
-              <select name="orario" id="orario" class="my-1">
+              <select name="orario" id="orario" class="w-50 text-center inputprenotazioni">
                 <option value="19:00">19:00</option>
                 <option value="19:15">19:15</option>
                 <option value="19:30">19:30</option>
@@ -129,7 +129,7 @@
                 <option value="23:00">23:00</option>
               </select>
               <label for="password" class="d-block my-1">Numero Persone</label>
-              <select name="numeropersone" id="numeropersone" class="my-1">
+              <select name="numeropersone" id="numeropersone" class="w-50 text-center inputprenotazioni">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -146,10 +146,10 @@
                 <option value="14">14</option>
               </select>
               <label for="username" class="d-block mx-auto my-1">Nome e Cognome:</label>
-              <input type="text" id="username" name="username" class="rounded-0 d-block mx-auto my-1" required>
+              <input type="text" id="username" name="username" class="d-block mx-auto w-50 inputprenotazioni" required>
               <label for="username" class="d-block mx-auto my-1">Numero Telefonico:</label>
-              <input type="text" id="username" name="username" class="rounded-0 d-block mx-auto my-1" required>
-              <button class="btn btn-black bg-black text-white mt-4 mb-2 my-1">Invia Prenotazione</button>
+              <input type="text" id="username" name="username" class="d-block mx-auto w-50 inputprenotazioni" required>
+              <submit class="btn btn-black bg-black text-white mt-4 mb-2 my-1">Invia Prenotazione</submit>
             </form>
           </div>
         </div>
