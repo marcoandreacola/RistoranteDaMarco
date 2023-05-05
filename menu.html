@@ -19,6 +19,14 @@
     <link rel="icon" type="image/x-icon" href="stile/img/favicon3.png">
 </head>
 <body>
+  <!-- intestazione sito titolo -->
+  <div class="row contenitoreintestazionesito">
+    <a href="index.html" class="text-decoration-none">
+      <h3 class="fonttitoli text-center py-3">
+        Ristorante da Marco
+      </h3>
+    </a>
+  </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fontpiccolo text-center">
         <div class="container-fluid">
@@ -39,6 +47,9 @@
               <li class="nav-item px-1" >
                 <a class="nav-link" href="contattaci.html">Contattaci</a>
               </li>
+              <li class="nav-item px-1" >
+                <a class="nav-link" href="https://www.tripadvisor.it/" target="_blank">Tripadvisor</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -48,9 +59,8 @@
       <!-- prima grid sezione antipasti -->
       <div class="container my-5 gridantipastimenu ">
         <div class="row">
-            <h3 class="text-center text-black fonttitoli mb-5 mx-auto">Antipasti</h3>
-            <div class="col-12 col-md-6 mx-auto text-center">
-                
+            <h2 class="text-center d-inline mx-auto fonttitoli pb-4">Antipasti</h2>
+            <div class="col-11 col-md-6 mx-auto text-center colonnalistamenu">
                 <ul class="mx-auto">
                     <li class="my-3">lorem ipsum</li>
                     <li class="my-3">lorem ipsum</li>
@@ -69,9 +79,11 @@
       <div class="container my-5 gridprimimenu">
         <div class="row">
             <h3 class="text-center text-black fonttitoli mb-5">Primi Piatti</h3>
-            <div class="col-10 col-md-6 colonnafotoprimi"></div>
-            <div class="col-10 col-md-6  bg-info">
-                <ul class="bg-white">
+            <div class="col-10 col-md-6 colonnafotoprimi mx-auto order-2 order-md-1">
+                <img src="stile/img/primo2.avif" alt="image">
+            </div>
+            <div class="col-11 col-md-6 text-center mx-auto colonnalistamenu order-1 order-md-2">
+                <ul>
                     <li class="my-3 ">lorem ipsum</li>
                     <li class="my-3">lorem ipsum</li>
                     <li class="my-3">lorem ipsum</li>
@@ -81,12 +93,13 @@
                 </ul>
             </div>
         </div>
-      </div>
+    </div>    
+
       <!-- terza grid sezione secondipiatti -->
       <div class="container my-5 gridasecondi text-center">
         <div class="row">
             <h3 class="text-center text-black fonttitoli mb-5">Secondi Piatti</h3>
-            <div class="col-10 col-md-6">
+            <div class="col-11 col-md-6 text-center mx-auto colonnalistamenu">
                 <ul>
                     <li class="my-3">lorem ipsum</li>
                     <li class="my-3">lorem ipsum</li>
@@ -96,15 +109,19 @@
                     <li class="my-3">lorem ipsum</li>
                 </ul>
             </div>
-            <div class="col-10 col-md-6 colonnafotosecondi"></div>
+            <div class="col-10 col-md-6 colonnafotosecondi mx-auto">
+                <img src="stile/img/secondi.avif" alt="image">
+            </div>
         </div>
       </div>
       <!-- quarta grid sezione dessert -->
       <div class="container my-5 griddessert text-center">
         <div class="row">
-            <h3 class="text-center text-black fonttitoli mb-5">Primi Piatti</h3>
-            <div class="col-10 col-md-6 colonnafotodessert"></div>
-            <div class="col-10 col-md-6">
+            <h3 class="text-center text-black fonttitoli mb-5">Dessert</h3>
+            <div class="col-10 col-md-6 colonnafotodessert mx-auto order-2 order-md-1">
+                <img src="stile/img/dessert.png" alt="image">
+            </div>
+            <div class="col-11 col-md-6 mx-auto colonnalistamenu order-1 order-md-2">
                 <ul>
                     <li class="my-3">lorem ipsum</li>
                     <li class="my-3">lorem ipsum</li>
@@ -162,7 +179,7 @@
               <i class="fas fa-gem me-3"></i>Ristorante Da Marco
             </h6>
             <p class="fontpiccolo text-black">
-              Ristorante Da Marco-Ristorante di pesce Milano, Via Roma 132 <br> P.Iva 6875667567546757
+              Ristorante Da Marco-Ristorante di pesce Milano, Via Roma 132 <br> P.Iva 000000000000000000
             </p>
           </div>
           <!-- Grid column -->

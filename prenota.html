@@ -19,6 +19,14 @@
     <link rel="icon" type="image/x-icon" href="stile/img/favicon3.png">
 </head>
 <body>
+  <!-- intestazione sito titolo -->
+  <div class="row contenitoreintestazionesito">
+    <a href="index.html" class="text-decoration-none">
+      <h3 class="fonttitoli text-center py-3">
+        Ristorante da Marco
+      </h3>
+    </a>
+  </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fontpiccolo text-center">
         <div class="container-fluid">
@@ -31,13 +39,16 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item px-1">
-                <a class="nav-link" href="#">Menù</a>
+                <a class="nav-link" href="menu.html">Menù</a>
               </li>
               <li class="nav-item px-1">
                 <a class="nav-link" href="prenota.html">Prenota</a>
               </li>
               <li class="nav-item px-1" >
                 <a class="nav-link" href="contattaci.html">Contattaci</a>
+              </li>
+              <li class="nav-item px-1" >
+                <a class="nav-link" href="https://www.tripadvisor.it/" target="_blank">Tripadvisor</a>
               </li>
             </ul>
           </div>
@@ -51,7 +62,7 @@
             <h4 class="text-black fonttitoli my-auto mt-4 mb-3">Prenota</h4>
             <form action="">
               <label for="data" class="my-2">Data:</label>
-              <input type="date" id="data" name="data" class="text-center d-block mx-auto w-50 inputprenotazioni" required>
+              <input type="date" id="data" name="data" class="text-center d-block mx-auto w-50 inputprenotazioni" required autofocus>
               <label for="email" class="d-block my-2">Orario:</label>
               <select name="orario" id="orario" class="w-50 text-center inputprenotazioni">
                 <option value="19:00">19:00</option>
@@ -147,7 +158,7 @@
               <i class="fas fa-gem me-3"></i>Ristorante Da Marco
             </h6>
             <p class="fontpiccolo text-black">
-              Ristorante Da Marco-Ristorante di pesce Milano, Via Roma 132 <br> P.Iva 6875667567546757
+              Ristorante Da Marco-Ristorante di pesce Milano, Via Roma 132 <br> P.Iva 000000000000000000
             </p>
           </div>
           <!-- Grid column -->

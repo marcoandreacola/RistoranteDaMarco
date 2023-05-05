@@ -24,9 +24,8 @@ inputDate.addEventListener('input', function() {
 });
 
 // Aggiungiamo un listener al click sull'input per far comparire il calendario predefinito
-inputDate.addEventListener('click', function() {
-  this.type = 'date';
-  this.focus();
+document.getElementById("data").addEventListener("focus", function() {
+  this.click();
 });
 
 // controllo numero telefonico input

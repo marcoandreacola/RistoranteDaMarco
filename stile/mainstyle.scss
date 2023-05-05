@@ -32,27 +32,27 @@
 }
 // funzioni responsive testo img
 @mixin Posizionetitoloimg1200px(){
-    position: absolute;
+    position: relative;
     left: 50%;
-    bottom: 5%;
+    top:85%;
     transform: translate(-50%, -50%);
 }
 @mixin Posizionetitoloimg1092px(){
-    position: absolute;
+    position: relative;
     left: 50%;
-    bottom: 20%;
+    bottom:85%;
     transform: translate(-50%, -50%);
 }
 @mixin Posizionetitoloimg802px(){
-    position: absolute;
+    position: relative;
     left: 50%;
-    bottom: 20%;
+    bottom:85%;
     transform: translate(-50%, -50%);
 }
 @mixin Posizionetitoloimg452px(){
-    position: absolute;
+    position: relative;
     left: 50%;
-    bottom: 58%;
+    top:85%;
     transform: translate(-50%, -50%);
 }
 // media query posizione testo su img
@@ -76,23 +76,21 @@
       @include Posizionetitoloimg452px();
     }
   }
-.contenitoretitoloimg{
-    h1, span{
-        text-shadow: 1px 0 rgb(96, 96, 96), -1px 0 rgb(96, 96, 96), 0 1px rgb(96, 96, 96), 0 -1px rgb(96, 96, 96),
-               1px 1px rgb(96, 96, 96), -1px -1px rgb(96, 96, 96), 1px -1px rgb(96, 96, 96), -1px 1px rgb(96, 96, 96);
-    }
-}
 .colonnaprimafotohome{
-    background-image: url('img/slideshow-1565694222.jpg');
-    background-position: cover bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
+}
+.colonnaprimafotohome img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .colonnasecondafotohome{
-    background-image: url('img/ristoranti-di-mare-Lazio.jpg');
-    background-position: cover bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
+}
+.colonnasecondafotohome img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .contenitorerecensioni{
     h3{
@@ -115,6 +113,7 @@
         padding-top: 0.5vh;
         padding-bottom: 0.5vh;
         border: 1px solid lightgrey;
+        cursor: pointer;
     }
     .inputprenotazioni:focus {
         outline: none;
@@ -145,46 +144,43 @@
     }
     .colonnafotoantipasti {
         position: relative;
-      }
+    }
       .colonnafotoantipasti img {
-        // position: absolute;
-        // top: 0;
-        // left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
-      }
-    // .colonnafotoantipasti{
-        // background-image: url(img/antipasto2.webp);
-        // background-position: cover;
-        // background-size: cover;
-        // background-repeat: no-repeat;
-    // }
+    }
     .colonnafotoprimi{
-        background-image: url(img/primo2.avif);
-        background-position: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
+    }
+    .colonnafotoprimi img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .colonnafotosecondi{
-        background-image: url(img/secondi.avif);
-        background-position: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
+    }
+    .colonnafotosecondi img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .colonnafotodessert{
-        background-image: url(img/dessert.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
     }
-    @media (max-width: 767px) {
-        .colonnafodessert {
-          display: block;
-          background-image: none;
-          background-color: #fff;
-          padding: 20px;
+    .colonnafotodessert img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media screen and (max-width: 768px) {
+        .colonnalistamenu{
+            text-align: left !important;
         }
-      }
-      
+      }   
 }
-
+.iframegooglemap{
+    width: 100%;
+    height: 100%;
+}
